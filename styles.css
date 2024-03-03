@@ -1,0 +1,80 @@
+body {
+  background-color: #666;
+  color: #8b8;
+  font-family: "Arial", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+#board {
+  display: grid;
+  grid-template-columns: repeat(7, max-content);
+  gap: 1.5em;
+  justify-content: center;
+  padding: 1em;
+  background-color: #444;
+  border: 4px solid #888;
+  border-radius: 2em;
+  box-shadow: 0 0 2em 0.5em #000;
+}
+.cell {
+  width: 64px;
+  aspect-ratio: 1 / 1;
+  font-size: 300%;
+
+  background-color: #888;
+  border: 4px darkgrey;
+  border-radius: 50%;
+  cursor: pointer;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto;
+  padding: 40px;
+  border: 1px solid #888;
+  width: 50%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); /* Drop shadow for depth */
+  border-radius: 10px;
+  text-align: center;
+}
+.modal-content h2 {
+  color: #333;
+  font-size: 6em;
+}
+.modal-content h3 {
+  color: #333;
+  font-size: 2em;
+}
+.modal-content button {
+    padding: 10px 20px;
+    background-color: #5CDB95;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 3em;
+    margin-top: 20px; 
+    transition: background-color 0.3s ease;
+}
+.modal-content button:hover {
+    background-color: #379683;
+}
