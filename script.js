@@ -13,8 +13,7 @@ const model = [
 
 
 let currentPlayer = 1;
-const GRID_HEIGHT = 6;
-const GRID_WIDTH = 7;
+
 const modal = document.querySelector(".modal");
 
 
