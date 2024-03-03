@@ -33,7 +33,7 @@ function checkForWinner() {
                 model[row][col] === model[row][col + 2] &&
                 model[row][col] === model[row][col + 3]) {
                 Confetti();
-                setTimeout(openModal, 3000);
+                setTimeout(openModal, 1000);
                 return model[row][col];
             }
         }
@@ -46,7 +46,7 @@ function checkForWinner() {
                 model[row][col] === model[row + 2][col] &&
                 model[row][col] === model[row + 3][col]) {
                 Confetti();
-                setTimeout(openModal, 3000);
+                setTimeout(openModal, 1000);
                 return model[row][col];
             }
         }
@@ -59,7 +59,7 @@ function checkForWinner() {
                 model[row][col] === model[row + 2][col + 2] &&
                 model[row][col] === model[row + 3][col + 3]) {
                 Confetti();
-                setTimeout(openModal, 3000);
+                setTimeout(openModal, 1000);
                 return model[row][col];
             }
         }
@@ -72,7 +72,7 @@ function checkForWinner() {
                 model[row][col] === model[row + 2][col - 2] &&
                 model[row][col] === model[row + 3][col - 3]) {
                 Confetti();
-                setTimeout(openModal, 2000);
+                setTimeout(openModal, 1000);
                 return model[row][col];
             }
         }
